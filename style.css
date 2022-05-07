@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Montserrat:wght@400;500&family=Oswald:wght@500&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Hurricane', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+}
+
+
+
+/* ##################### utility class  ############################ */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.btn-primary{
+    color: #fff;
+    background-color: #2b6777;
+    transition: color 0.5s ease-in-out;
+}
+
+.btn-primary:hover{
+    color: black;
+}
+
+/* ################################### Navbar style############################# */
+
+
+
+.navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background: #2b6777;
+    opacity: 0.85;
+    z-index: 999;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+.menu-items{
+    order: 2;
+    display: flex;
+}
+
+
+.menu-items li a:hover{
+    color:black;
+}
+
+
+.menu-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menu-items li:hover{
+    color: #2b6777;
+}
+
+.logo{
+    order: 1;
+    font-size: 3rem;
+    color: white;
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3 ease-in-out;
+    
+}
+
+
+
+
+/* ###################### section ############################ */
+
+.home{
+    height: 60vh;
+    background:  url(./img/camera-ge910fcf48_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+}
+.main-tag{
+    text-transform: uppercase;
+    
+}
+
+
+
+
+/* ############################ about us ########### */
+
+#about{
+    padding: 70px 80px;
+    background: #f5f5f7;
+   
+
+}
+
+.about-container{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 5px 10px 0px #aaa;
+
+}
+
+.about h1{
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    border-bottom: 3px solid #2b6777 ;
+}
+
+.about p{
+    font-size: 1.6rem;
+    color: #555;
+    font-weight: 600;
+    padding-top: 1rem;
+    padding-bottom: 10rem;
+}
+
+
+.about-img{
+    flex: 1 1 400px;
+    padding: 20px;
+
+}
+
+
+.about-text{
+    flex: 1 1 400px;
+    padding: 20px;
+    margin: auto;
+}
+
+.about-img img{
+   display: block;
+   height: 400px;
+   max-width: 100%;
+   margin: auto;
+   object-fit: cover;
+   object-position: center;
+}
+
+
+/* ############################## place style ############################ */
+
+#place{
+    padding: 40px 30px;
+   background-color: #f5f5f78a;
+}
+
+.place-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#place .place-tag{
+    font-size: 3.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2b6777;
+    /* padding-bottom: 2.3rem; */
+    border-bottom: 3px solid #2b6777;
+}
+
+.travel img{
+    display: block;
+    height: 400px;
+    width: 100%;
+    border-radius: 15px 50px;
+    padding: 10px;
+    align-items: center;
+    object-fit: cover;
+    object-position: center;
+    justify-content: space-between;
+}
+
+.travel{
+    padding: 1rem;
+    margin: 1.5rem;
+    border-radius: 15px 50px;
+    box-shadow: 2px 10px 5px 0px #aaa;
+   
+}
+
+.travel h2{
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2b6777;
+   padding: 1rem;
+}
+
+.travel p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: center;
+    padding: .5rem;
+}
+
+.travel .btn{
+   margin-left: 44%;
+   margin-bottom: 1.5rem;
+}
+.travel .booking-price{
+    color: rgb(35, 133, 35);
+    text-transform: uppercase;
+}
+
+
+/* ################################# contact style #################### */
+
+#contact{
+    padding:90px 60px;
+}
+
+.contact-container{
+    display: flex;
+   flex-direction: row;
+   box-shadow: 0px 10px 5px #aaa;
+}
+
+.contact-container .img-container{
+    width: 50%;
+    margin: auto;
+}
+
+
+.contact-container img{
+    display: block;
+    height: 550px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: cover;
+    object-position: center;
+    padding: 1px;
+}
+
+.contact-box h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2b6777;
+    padding: 1.5rem ;
+    padding-bottom: 4rem;
+}
+
+.contact-box{
+    width: 50%;
+    padding: 2.5rem;
+    margin: auto;
+}
+
+.contact-box input{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #2b6777;
+    padding: 1rem 0;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: #444;
+    font-weight: 500;
+}
+
+.contact-box textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #2b6777;
+    padding: 2rem 0;
+    font-weight: 500;
+    outline: none;
+}
+
+.contact-box a{
+  margin-left: 44%;
+}
+
+
+
+/* ##########################footer ########################## */
+
+#footer{
+   background-color: #2b6777;
+   padding: 50px 50px;
+}
+
+.footer-container h2{
+    color: white;
+    text-align: center;
+    
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+
+/* ###########################media queries ######################### */
+
+@media (max-width:768px){
+    .navbar{
+        opacity: 0.95;
+    }
+
+    #hamburger{
+        width: 30px;
+        height: 30px;
+        margin: 40px 0px 20px 0;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .bar{
+        height: 5px;
+        width: 100%;
+        background-color: #fff;
+        display: block;
+        border-radius: 4px;
+        transition: 0.3s ease;
+    }
+
+    #bar1{
+        transform: translateY(-4px);
+    }
+    #bar3{
+        transform: translateY(4px);
+    }
+
+    .menu-items li a{
+        color: black;
+        text-decoration: none;
+    } 
+       .menu-items li a:hover{
+        border: 1px solid black;
+        color: #fff;
+    } 
+
+    .menu-items li{
+        padding: 10px 0;
+    }
+
+    .menu-items{
+        padding: 0;
+        margin: 0 20px;
+        transition: 1s ease;
+        display: none;
+    }
+
+    .icon .bar{
+        background-color: #2b6777;
+    }
+
+    .icon #bar1{
+        transform: translateY(4px) rotate(-45deg);
+    }
+    .icon #bar3{
+        transform: translateY(-6px) rotate(45deg);
+    }
+    .icon #bar2{
+       opacity: 0;
+    }
+
+    .change{ 
+        background-color: #2b6777;
+        height: 100vh;
+        margin:0;
+        position: absolute;
+        font-size: 30px;
+        top: 0;
+        z-index: -100;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        left: -15px;
+    }
+
+
+
+    /* ##################### logo ################ */
+
+
+   
+    
+    /* #################### about style ################# */
+    
+    #about{
+        padding: 80px 10px;
+    }
+
+
+    .about p{
+        padding: 5px;
+    }
+
+
+
+
+    /* ######################## place ###################### */
+    .place-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* ###################### contact page ######################## */
+
+    #contact{
+        padding: 20px 10px;
+    }
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container img{
+    height: 300px;
+    width: 300px;  
+}
+
+
+.contact-container .img-container{
+    width: 100%;
+    margin: auto;
+}
+
+.contact-container img{
+    width: 100%;
+    
+}
+
+.contact-box{
+    width: 100%;
+}
+
+
+}
+
+
+
+/* ############################# landscape mode ####################### */
+
+
+@media (orientation: landscape) and (max-height:500px){
+    
+}
